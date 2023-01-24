@@ -15,8 +15,9 @@ const RandomMemes = () => {
 
     return (
         <div>
-          
-        
+            {memes.map(meme => (
+                <img key={meme.id} src={meme.url} alt={meme.name} />
+            ))}
         </div>
     )
 }
