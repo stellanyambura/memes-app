@@ -42,3 +42,6 @@
 *{
   background-color: yellow;
 }
+.random{
+  display: flex;
+}

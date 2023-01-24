@@ -17,6 +17,9 @@ const RandomMemes = () => {
     function handleNextMeme(){
         setCurrentMeme(memes[Math.floor(Math.random() * memes.length)])
     }
+    function data(details){
+        console.log(details)
+    }
 const sortMemes = memes.sort((a, b)=> b.height - a.height)
    return (
     <div className="container">
@@ -26,12 +29,12 @@ const sortMemes = memes.sort((a, b)=> b.height - a.height)
             {
             display === 'all'?
             sortMemes.map(meme => (
-                <div className="col-4" key={meme.id}>
+                <div className="col-4" key={meme.id} onClick={()=>data(meme)}>
                     <img src={meme.url} alt={meme.name} className="img-fluid" />
                     <span><p>{meme.name}</p></span>
                 </div>
             ))
-        : <div className="col-4">
+        : <div className="col-4 random">
         {currentMeme && 
             <>
             <img src={currentMeme.url} alt={currentMeme.name} className="img-fluid" />
