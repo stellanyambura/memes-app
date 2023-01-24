@@ -12,11 +12,11 @@ const RandomMemes = () => {
                 setMemes(data.data.memes);
             });
     }, []);
-
+const sortMemes = memes.sort((a, b)=> b.height - a.height)
    return (
     <div className="container">
         <div className="row">
-            {memes.map(meme => (
+            {sortMemes.map(meme => (
                 <div className="col-4" key={meme.id}>
                     <img src={meme.url} alt={meme.name} className="img-fluid" />
                     <span><p>{meme.name}</p></span>
