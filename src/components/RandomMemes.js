@@ -1,52 +1,48 @@
-
 import React, { useState, useEffect } from 'react';
+import MemeList from './MemeList';
+import RandomMeme from './RandomMeme';
 
 const RandomMemes = () => {
-    const [memes, setMemes] = useState([]);
-    const [display, setDisplay] = useState('all')
-    const [currentMeme, setCurrentMeme] = useState(null)
-    console.log(memes)
-    useEffect(() => {
-        fetch('https://api.imgflip.com/get_memes')
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-                setMemes(data.data.memes);
-            });
-    }, []);
-    function handleNextMeme(){
-        setCurrentMeme(memes[Math.floor(Math.random() * memes.length)])
-    }
-    function data(details){
-        console.log(details)
-    }
-const sortMemes = memes.sort((a, b)=> b.height - a.height)
-   return (
-    <div className="container">
-        <div className="row">
-            <button onClick={()=>setDisplay('all')}>All Memes</button>
-            <button onClick={()=> {setDisplay('one'); setCurrentMeme(memes[Math.floor(Math.random() * memes.length)])}}>view randomly</button>
-            {
-            display === 'all'?
-            sortMemes.map(meme => (
-                <div className="col-4" key={meme.id} onClick={()=>data(meme)}>
-                    <img src={meme.url} alt={meme.name} className="img-fluid" />
-                    <span><p>{meme.name}</p></span>
+  const [memes, setMemes] = useState([]);
+  const [display, setDisplay] = useState('All')
+  const [currentMeme, setCurrentMeme] = useState(null)
+
+  console.log(memes)
+
+  useEffect(() => {
+    fetch('https://api.imgflip.com/get_memes')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data.data.memes)
+        setMemes(data.data.memes);
+      });
+  }, []);
+  
+  function handleNextMeme() {
+    setCurrentMeme(memes[Math.floor(Math.random() * memes.length)])
+  }
+
+  return (
+    <React.Fragment>
+        <h1 style={{textAlign: "center", paddingBottom: "15px"}}>Memes!</h1>
+            <div className="container">
+            <div className="row">
+                <div style={{paddingBottom: "15px"}}>
+                    <button onClick={() => setDisplay('All')}>All Memes</button>
                 </div>
-            ))
-        : <div className="col-4 random">
-        {currentMeme && 
-            <>
-            <img src={currentMeme.url} alt={currentMeme.name} className="img-fluid" onClick={()=>data(currentMeme)}/>
-            <span><p>{currentMeme.name}</p></span>
-            <button onClick={handleNextMeme}>Next Meme</button>
-            </>
-        }
-    </div>
-        }
+                <div>
+                    <button onClick={() => { setDisplay('One'); handleNextMeme()}}>View A Random Meme</button>
+                </div>
+                {
+                display === 'All' ? <MemeList memes={memes}/> :
+                <div> 
+                    <RandomMeme currentMeme={currentMeme} onNextMeme={handleNextMeme}/>
+                </div>
+                }
+            </div>
         </div>
-    </div>
-)
+    </React.Fragment>
+  )
 }
 
 export default RandomMemes;
