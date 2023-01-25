@@ -36,12 +36,8 @@
     transform: rotate(360deg);
   }
 }
-.large-meme {
-  height: 400px;
-}
+
 *{
   background-color: yellow;
 }
-.random{
-  display: flex;
-}
+

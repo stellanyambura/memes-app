@@ -12,7 +12,7 @@ function MemeList({ memes }) {
                         <button style={{padding: "7.5px"}} onClick={() => setMemeDetailDisplay(meme.id)}>Show Meme Details</button>
                     </div>
                     <div>
-                        <button style={{padding: "7.5px"}} onClick={() => setMemeDetailDisplay(-1)}>Hide Meme Details</button>
+                        <button style={{padding: "7.5px", marginLeft:'15px'}} onClick={() => setMemeDetailDisplay(-1)}>Hide Meme Details</button>
                     </div>
               {memeDetailDisplay !== meme.id ? null : <MemeDetail key={meme.id} name={meme.name} url={meme.url}/>}
             </div>
