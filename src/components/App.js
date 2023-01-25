@@ -1,14 +1,16 @@
 import React from 'react';
 import Home from "./Home";
 import Navbar from './Navbar';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "semantic-ui-css/semantic.min.css";
+import Auth from '../Auth';
+
 
 function App() {
   return (
     <div>
-      <Home/>
+     
       <Navbar />
+      <Home/>
+      <Auth />
       </div>
   )
 }
