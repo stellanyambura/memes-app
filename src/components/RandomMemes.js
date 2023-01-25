@@ -37,7 +37,7 @@ const sortMemes = memes.sort((a, b)=> b.height - a.height)
         : <div className="col-4 random">
         {currentMeme && 
             <>
-            <img src={currentMeme.url} alt={currentMeme.name} className="img-fluid" />
+            <img src={currentMeme.url} alt={currentMeme.name} className="img-fluid" onClick={()=>data(currentMeme)}/>
             <span><p>{currentMeme.name}</p></span>
             <button onClick={handleNextMeme}>Next Meme</button>
             </>
