@@ -1,9 +1,12 @@
 import React from 'react'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "semantic-ui-css/semantic.min.css";
 
-function Home() {
+export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <h1>MEMES APP</h1>
+      <button></button>
+    </div>
   )
 }
-
-export default Home
