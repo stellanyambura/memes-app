@@ -32,3 +32,14 @@ If you're interested in contributing to this project, please follow the instruct
 - Run `npm install`
 - Run `npm start`
 
+## Usage 
+- The application has been deployed at ``
+
+### Copyright
+Copyright (c) 2023 
+Stella Gitonga - `https://github.com/stellanyambura`
+Ian Orieko - `https://github.com/ianrich69420`
+Ian Irungu - `https://github.com/i-muiri`
+Emmanuel Barsulai - `https://github.com/Barsu5489`
+
+- Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (Meme- App).
