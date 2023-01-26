@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import MemeDetail from "./MemeDetail";
 
-function MemeList({ memes }) {
+function MemeList({ randomMemes }) {
     const [memeDetailDisplay, setMemeDetailDisplay] = useState(-1)
 
-    const sortMemes = memes.sort(function(a, b){return 0.5 - Math.random()})
+    /*const sortMemes = memes.sort(function(a, b){return 0.5 - Math.random()})*/
 
     return (
-        sortMemes.map(meme => (
+        randomMemes.map(meme => (
             <div className="col-4" key={meme.id} >
               <img src={meme.url} alt={meme.name} className="img-fluid" style={{height: 580, width: 2118, padding: "15px"}}/>
                     <div style={{paddingBottom: "15px", paddingLeft: "15px", paddingRight: "15px"}}>
