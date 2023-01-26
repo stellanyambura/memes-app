@@ -18,3 +18,9 @@
 - Allows users to view all the memes in a grid format in sorted randomly.
 
 ## Contributing 
+
+If you're interested in contributing to this project, please follow the instructions below:
+1) Fork the repository
+2) Create a new branch with a descriptive name
+3) Make your changes and commit them
+4) Open a pull request and describe the changes you've made
