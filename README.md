@@ -24,3 +24,11 @@ If you're interested in contributing to this project, please follow the instruct
 2) Create a new branch with a descriptive name
 3) Make your changes and commit them
 4) Open a pull request and describe the changes you've made
+
+## Installation 
+- In order to run the application, you will need to have Node.js and npm (Node Package Manager) installed on your machine
+- Clone the repository `git clone git@github.com:stellanyambura/memes-app.git`
+- cd into working directory
+- Run `npm install`
+- Run `npm start`
+
