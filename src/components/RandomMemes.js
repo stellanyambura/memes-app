@@ -6,6 +6,7 @@ const RandomMemes = () => {
   const [memes, setMemes] = useState([]);
   const [display, setDisplay] = useState('All')
   const [currentMeme, setCurrentMeme] = useState(null)
+  const sortMemes = memes.sort(function(a, b){return 0.5 - Math.random()})
 
   console.log(memes)
 
@@ -25,7 +26,7 @@ const RandomMemes = () => {
   return (
     <React.Fragment>
         <h1 style={{textAlign: "center", paddingBottom: "15px"}}>Memes!</h1>
-            <div className="container">
+          <div className="container">
             <div className="row">
                 <div style={{paddingBottom: "15px"}}>
                     <button onClick={() => setDisplay('All')}>All Memes</button>
@@ -34,13 +35,13 @@ const RandomMemes = () => {
                     <button onClick={() => { setDisplay('One'); handleNextMeme()}}>View A Random Meme</button>
                 </div>
                 {
-                display === 'All' ? <MemeList memes={memes}/> :
+                display === 'All' ? <MemeList randomMemes={sortMemes}/> :
                 <div> 
                     <RandomMeme currentMeme={currentMeme} onNextMeme={handleNextMeme}/>
                 </div>
                 }
             </div>
-        </div>
+          </div>
     </React.Fragment>
   )
 }
