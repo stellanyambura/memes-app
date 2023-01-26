@@ -20,6 +20,9 @@
 ## All Memes
 - Allows users to view all the memes in a grid format in sorted randomly.
 
+## Meme Details
+- Allows users to view details about a meme
+
 ## Contributing 
 
 If you're interested in contributing to this project, please follow the instructions below:
