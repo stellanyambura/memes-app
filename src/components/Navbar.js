@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 const Nav=()=>{
     return(
     <nav>
-        <NavLink to="/loginpage">LoginPage</NavLink>
+        <NavLink to="/loginpage" style={{paddingRight: "15px"}}>LoginPage</NavLink>
         <NavLink exact="true" to="/randommemes">RandomMemes</NavLink>
       
 </nav>
