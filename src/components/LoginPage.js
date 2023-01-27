@@ -20,6 +20,7 @@ export default function LoginPage (props) {
                 <button> Login</button>
             </form>
             <button className="link-btn btn btn-outline-info ms-1" onClick={() => props.onFormSwitch('signup')}>Don't have an account? Signup</button>
+                  <h1 style={{fontSize: "8rem"}}>Use the NavBar at the top to login and View Some Memes!</h1>
         </div>
     )
 }
