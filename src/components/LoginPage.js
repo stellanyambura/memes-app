@@ -12,18 +12,14 @@ export default function LoginPage (props) {
     }
 
     return (
-        <div className="auth-form-container">
-            <h2>Login</h2>
+        <div className="auth-form-container container-fluid bg-dark">
+            <h2 className="navbar-brand text-light" style={{fontSize: "1.5rem"}}>Login</h2>{"\n"}
             <form className= "login-form" onSubmit={handleSubmit}>
-                <label htmlFor="email" > </label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)}  type="email" placeholder="your email address" id = "email" name="email"/>
-                <label htmlFor="password" > </label>
-                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="your password" id = "password" name="password" />
+                <input className="mb-3" value={email} onChange={(e) => setEmail(e.target.value)}  type="email" placeholder="Your email address" id = "email" />
+                <input className="mb-3" value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Your password" id = "password" />
                 <button> Login</button>
-
             </form>
-
-            <button className="link-btn" onClick={() => props.onFormSwitch('signup')}>Don't have an account? Signup</button>
-            </div>
+            <button className="link-btn btn btn-outline-info ms-1" onClick={() => props.onFormSwitch('signup')}>Don't have an account? Signup</button>
+        </div>
     )
 }
