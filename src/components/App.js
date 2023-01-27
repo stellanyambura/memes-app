@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route,BrowserRouter} from 'react-router-dom'
 import 'semantic-ui-css/semantic.min.css'
-//import Home from "./Home";
+import Home from "./Home";
 
 import Nav from './Navbar';
 //import Auth from '../Auth';
@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/loginpage' element={<LoginPage/>}></Route>
           <Route  exact path='/randommemes' element={<RandomMemes/>}></Route>
+          <Route  exact path='/home' element={<Home/>}></Route>
 
         </Routes>
        

@@ -6,6 +6,8 @@ const Nav=()=>{
     <nav>
         <NavLink to="/loginpage">LoginPage</NavLink>
         <NavLink exact="true" to="/randommemes">RandomMemes</NavLink>
+        <NavLink exact="true" to="/home">Home</NavLink>
+
       
 </nav>
     )
