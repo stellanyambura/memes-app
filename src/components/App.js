@@ -1,6 +1,4 @@
-import React from 'react';
-import { Routes, Route,BrowserRouter} from 'react-router-dom'
-import 'semantic-ui-css/semantic.min.css'
+import React, {useState} from 'react';
 import Home from "./Home";
 
 import Nav from './Navbar';
@@ -9,7 +7,10 @@ import RandomMemes from './RandomMemes';
 import LoginPage from './LoginPage';
 
 
+
+
 function App() {
+  //const [user, setUser] = useState("");
   return (
     <div>
       <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
      
       {/* <Navbar />
       <Home/>
+     
       <Auth />
       <RandomMemes /> */}
       </div>

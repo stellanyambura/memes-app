@@ -1,26 +1,59 @@
-import React, {useState} from "react";
+import React, { useState} from "react";
+import { useNavigate } from "react-router";
+
+export default function LoginPage(props) {
+let redirect = useNavigate()
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [error, setError] = useState(null);
 
 
-export default function LoginPage (props) {
-
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // simulate a successful login
+    if(localStorage.getItem(email)){
+      const user = JSON.parse(localStorage.getItem(email));
+      if (user.password === password){
+        redirect('/home')
+        return;
+      }
     }
+      setError("Invalid email or password. Please try again.");
+  };
 
-    return (
-        <div className="auth-form-container container-fluid bg-dark">
-            <h2 className="navbar-brand text-light" style={{fontSize: "1.5rem"}}>Login</h2>{"\n"}
-            <form className= "login-form" onSubmit={handleSubmit}>
-                <input className="mb-3" value={email} onChange={(e) => setEmail(e.target.value)}  type="email" placeholder="Your email address" id = "email" />
-                <input className="mb-3" value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Your password" id = "password" />
-                <button> Login</button>
-            </form>
-            <button className="link-btn btn btn-outline-info ms-1" onClick={() => props.onFormSwitch('signup')}>Don't have an account? Signup</button>
-                  <h1 style={{fontSize: "8rem"}}>Use the NavBar at the top to login and View Some Memes!</h1>
-        </div>
-    )
-}
+  return (
+    <div className="auth-form-container">
+    <h2>Login</h2>
+    <form className="login-form" onSubmit={handleSubmit}>
+    <label htmlFor="email"></label>
+    <input
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    type="email"
+    placeholder="your email address"
+    id="email"
+    name="email"
+    required
+    />
+    <label htmlFor="password"></label>
+    <input
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+    type="password"
+    placeholder="your password"
+    id="password"
+    name="password"
+    required
+    />
+    <button> Login</button>
+    {error && <p>{error}</p>}
+    </form>
+    <button
+    className="link-btn"
+    onClick={() => redirect('/signup')}
+    >
+    Don't have an account? Signup
+    </button>
+    </div>
+    );
+    }
