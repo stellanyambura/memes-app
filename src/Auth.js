@@ -1,28 +1,32 @@
 //import logo from './logo.svg';
 import './App.css';
-import React, { useState } from 'react';
+
 import LoginPage from './components/LoginPage';
+import Home from './components/Home';
 import Signup from './components/Signup';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
+function Auth() {
 
-function App() {
-
-  const [currentForm, setCurrentForm] = useState('login')
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-     }
-
-     
+ 
 
   return (
-    <div className='App'>
-      {
-        currentForm === 'login'? <LoginPage onFormSwitch={toggleForm} /> : <Signup onFormSwitch={toggleForm}/>
-      }
+
+    <BrowserRouter>
+    <Routes>
+      <Route exact path='/signup' element={<Signup/>}/>
+      <Route exact path='/login' element={<LoginPage/>}/>
+      <Route exact path='/home' element={<Home />}/>
+    </Routes>
+    </BrowserRouter>
+    // <div className='App'>
+    //   {
+    //     currentForm === 'login'? <LoginPage onFormSwitch={toggleForm} /> : <Signup onFormSwitch={toggleForm}/>
+    //   }
       
 
-    </div>
+    // </div>
   );
 }
 
-export default App;
+export default Auth;

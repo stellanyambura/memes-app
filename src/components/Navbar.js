@@ -3,8 +3,8 @@ import {NavLink} from 'react-router-dom'
 
 const Nav=()=>{
     return(
-    <nav>
-        <NavLink to="/loginpage">LoginPage</NavLink>
+    <nav className="navbar bg-dark" style={{height: "150%", fontSize: "1.5rem"}}>
+        <NavLink to="/loginpage" style={{paddingRight: "15px",}}>LoginPage</NavLink>
         <NavLink exact="true" to="/randommemes">RandomMemes</NavLink>
         <NavLink exact="true" to="/home">Home</NavLink>
 
