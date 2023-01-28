@@ -45,7 +45,20 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+.homeHead{
+  color: blue;
+  text-align: center;
 
+}
+.body{
+  background-color: blueviolet;
+  
+
+}
+.home-page{
+  background-color: blueviolet;
+  text-align: center;
+}
 .link-btn {
   background: none;
   color: blue;
