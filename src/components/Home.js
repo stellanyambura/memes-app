@@ -13,10 +13,10 @@ function HomePage() {
     <div>
 
 <div>
-  < button className="login" to= "/login">Login</button>
+  < Link className="login" to= "/login">Login</Link>
   </div>
 <div>
-  <button to="/randomMemes">RandomMemes</button>
+  <Link to="/randomMemes">RandomMemes</Link>
   </div>
   <h1 className='homeHead text-light bg-dark' style={{fontSize: "4rem", borderTopStyle: "solid"}}>Use the NavBar at the top to Login and View Some Memes!</h1>
 

@@ -25,7 +25,7 @@
 
 
 }
-.home-page div button{
+.home-page div link{
   margin-left: 55%;
   padding: 10px;
   border-radius: 7px;
@@ -33,7 +33,7 @@
   color: white; 
 
 }
-#loginbutton{
+#loginLink{
   margin-left: 53%;
   margin-bottom: 10px;
   
