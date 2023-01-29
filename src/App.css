@@ -52,7 +52,7 @@ button {
 
 }
 .body{
-  background-color: blueviolet;
+  background-color: rgb(48, 44, 51);
   
 
 }
@@ -92,18 +92,18 @@ button{
   transform: translate(-50%, -50%);
 }
 a {
-  color:white; /* Color of the text */
+  color:white; 
   background-color:  rgb(108, 141, 108);
-  text-decoration: none; /* Remove the underline */
-  font-weight: bold; /* Bold font */
-  padding: 10px 20px; /* Add some padding */
-  border-radius: 10px; /* Round the corners */
-  transition: all 0.3s; /* Add a transition effect */
+  text-decoration: none; 
+  font-weight: bold; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  transition: all 0.3s; 
 }
 
 a:hover {
-  background-color:#85bb65;/* Change background color on hover */
-  color: #FFF; /* Change text color on hover */
+  background-color:#85bb65;
+  color: #FFF;
   text-decoration: none;
 }
 
