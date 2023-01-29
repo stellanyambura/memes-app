@@ -11,8 +11,12 @@ function HomePage() {
     <h1>MEMESAPP</h1>
     <h2>WELCOME TO OUR PAGE!</h2>
     <div>
-<Link to= "/login">Login</Link>
-<Link to="/randomMemes">RandomMemes</Link>
+<div>
+  < button className="login" to= "/login">Login</button>
+  </div>
+<div>
+  <button to="/randomMemes">RandomMemes</button>
+  </div>
     </div>
     {/* {currentSection === 'Login' && <Login globalData={globalData} />}
         {currentSection === 'RandomMemes' && <RandomMemes />}
