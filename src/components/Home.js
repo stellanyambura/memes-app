@@ -1,22 +1,25 @@
-import React from 'react'
+import React from "react";
 //import { Button } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css'
+import "semantic-ui-css/semantic.min.css";
 //import LoginPage from './LoginPage';
 //import RandomMemes from './RandomMemes';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function HomePage() {
-
-return (
+  return (
     <div className="home-page">
     <h1>MEMESAPP</h1>
     <h2>WELCOME TO OUR PAGE!</h2>
     <div>
 
-<Link to= "/login">Login</Link>
-<Link to="/randomMemes">RandomMemes</Link>
+<div>
+  < button className="login" to= "/login">Login</button>
+  </div>
+<div>
+  <button to="/randomMemes">RandomMemes</button>
+  </div>
+  <h1 className='homeHead text-light bg-dark' style={{fontSize: "4rem", borderTopStyle: "solid"}}>Use the NavBar at the top to Login and View Some Memes!</h1>
 
-        <h1 className='homeHead text-light bg-dark' style={{fontSize: "4rem", borderTopStyle: "solid"}}>Use the NavBar at the top to Login and View Some Memes!</h1>
     </div>
     {/* {currentSection === 'Login' && <Login globalData={globalData} />}
         {currentSection === 'RandomMemes' && <RandomMemes />}
@@ -25,7 +28,3 @@ return (
   );
 }
 export default HomePage;
-
-
-  
-

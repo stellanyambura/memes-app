@@ -1,10 +1,11 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import { Routes, Route,BrowserRouter} from 'react-router-dom'
 import 'semantic-ui-css/semantic.min.css'
+import '../index.css'
 import Home from "./Home";
 import LoginPage from './LoginPage';
-import React, {useState} from 'react';
+
 
 import Nav from './Navbar';
 //import Auth from '../Auth';
