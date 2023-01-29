@@ -11,12 +11,15 @@ function HomePage() {
     <h1>MEMESAPP</h1>
     <h2>WELCOME TO OUR PAGE!</h2>
     <div>
+
 <div>
   < button className="login" to= "/login">Login</button>
   </div>
 <div>
   <button to="/randomMemes">RandomMemes</button>
   </div>
+  <h1 className='homeHead text-light bg-dark' style={{fontSize: "4rem", borderTopStyle: "solid"}}>Use the NavBar at the top to Login and View Some Memes!</h1>
+
     </div>
     {/* {currentSection === 'Login' && <Login globalData={globalData} />}
         {currentSection === 'RandomMemes' && <RandomMemes />}
