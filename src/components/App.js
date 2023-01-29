@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route,BrowserRouter} from 'react-router-dom'
 import 'semantic-ui-css/semantic.min.css'
+import '../index.css'
 import Home from "./Home";
 import LoginPage from './LoginPage';
 
