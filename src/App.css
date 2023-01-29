@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(79deg, #7439db, #c66fbc 48%, #f7944d);
+  margin-top: 40%;
 }
 
 .auth-form-container, .login-form, .signup-form{
@@ -14,7 +15,7 @@
   align-items: center;
   max-width: 50vw;
   margin: 0 auto;
-  
+  margin-top: 8%;
 }
 
 .auth-form-container{
@@ -55,13 +56,71 @@ button {
   
 
 }
-.home-page{
-  background-color: blueviolet;
+.home-page {
+  background-image: url('https://images.unsplash.com/photo-1521027872898-ba76d86f95bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'), url('https://images.unsplash.com/photo-1653571084018-2b1d2fb88f73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'), url('https://images.unsplash.com/photo-1628499636754-3162d34ca39c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+  background-repeat: no-repeat;
+  background-size: auto 110vh;
+  background-position: left, center, right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  min-height: 95vh;
+}
+button{
+  background-color:rgb(227, 244, 227);
+}
+.home-page h5:nth-child(1) {
+  text-align: left;
+}
+
+.home-page h5:nth-child(2) {
   text-align: center;
 }
+
+.home-page h5:nth-child(3) {
+  text-align: right;
+}
+.text-container {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a {
+  color:white; /* Color of the text */
+  background-color:  rgb(108, 141, 108);
+  text-decoration: none; /* Remove the underline */
+  font-weight: bold; /* Bold font */
+  padding: 10px 20px; /* Add some padding */
+  border-radius: 10px; /* Round the corners */
+  transition: all 0.3s; /* Add a transition effect */
+}
+
+a:hover {
+  background-color:#85bb65;/* Change background color on hover */
+  color: #FFF; /* Change text color on hover */
+  text-decoration: none;
+}
+
+
 .link-btn {
   background: none;
-  color: blue;
-  text-decoration: underline;
+  color: white;
+  text-decoration: none;
   margin-top: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .home-page {
+    background-size: auto 110vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-page {
+    background-size: auto 90vh;
+  }
 }
