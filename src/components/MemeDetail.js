@@ -7,7 +7,7 @@ function MemeDetail({ name, url}) {
                 Name: {name}
             </div>
             <div>
-                Image Url: <a href={url} target="_blank" rel="noreferrer">{url}</a>
+                Url:<a href={url} target="_blank" rel="noreferrer" style={{backgroundColor:'transparent', color:'blue'}}>{url}</a>
             </div>
         </React.Fragment>
     )

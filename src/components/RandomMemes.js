@@ -29,10 +29,10 @@ const RandomMemes = () => {
           <div className="container">
             <div className="row">
                 <div style={{paddingBottom: "15px"}}>
-                    <button onClick={() => setDisplay('All')}>All Memes</button>
+                    <button onClick={() => setDisplay('All')}> Grid-view</button>
                 </div>
                 <div>
-                    <button onClick={() => { setDisplay('One'); handleNextMeme()}}>View A Random Meme</button>
+                    <button onClick={() => { setDisplay('One'); handleNextMeme()}}> Random</button>
                 </div>
                 {
                 display === 'All' ? <MemeList randomMemes={sortMemes}/> :
