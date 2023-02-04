@@ -1,18 +1,18 @@
 # Meme Application 
-The application has been deployed at `https://stellanyambura-memes-app.vercel.app/`
+The application has been deployed at https://my-project-ochre-eight.vercel.app/Meme 
 - This is a web application that allows users to view and generate memes. 
-- The application utilizes the imgflip API to fetch a list of popular memes and allows users to view them in a grid or randomly.
+- The application utilizes the imgflip API to fetch a list of popular memes and allows users to view them randomly or in all at once in a grid.
 - It was built using React.
 
 
 # Features 
 
 ## Login
-- The login page allows users to sign in to their account and access to all memes or random memes.
+- The login page allows users to sign in to their account and access all memes.
 
 ## Home 
 - The home page of the application allows users to see what the app is about
-- Users can navigate through tha application using the navbar.
+- Users can navigate through the application using the navbar.
 
 ## Random Memes
 - Allows users to view a randomly generated meme. Users can also navigate to the next random meme by clicking a button.
@@ -39,7 +39,7 @@ If you're interested in contributing to this project, please follow the instruct
 - Run `npm start`
 
 ## Usage 
-- The application has been deployed at `https://stellanyambura-memes-app.vercel.app/`
+- The application has been deployed at https://my-project-ochre-eight.vercel.app/Meme 
 
 ### Copyright
 Copyright (c) 2023 

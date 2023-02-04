@@ -1,41 +1,55 @@
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .home-page{
   background-color: powderblue;
-  padding: 0px;
-  margin: 0px;
+  /* padding: 0px;
+  margin: 0px; */
+  background:url(../public/image.jpg);
+  height:100vh;
+  width:100vw;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.home-page h1{
+   /* margin: auto;
+  position: relative; 
+  left: 0;
+  top: 0; */
+  color: purple; 
+  margin-left: 40%;
+  }
+.home-page h2{
+  margin-left: 35%;
+}
+.home-page div{
+  width: 80%;
+
+
 
 }
-.home-page-header {
-  color: tomato;
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid plum;
-  font-size: 1.5em;
-}
+.home-page div span{
+  margin-left: 55%;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgb(74, 46, 140);
+  color: white; 
 
-.home-page-content {
-  background-color: black;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  justify-content: center;
+}
+#loginspan{
+  margin-left: 53%;
+  margin-bottom: 10px;
+  
+}
+.nav{
+  justify-content: space-around;
+  background-color: gray;
+
+}
+.navbar{
+margin: 1px solid black;
+margin-bottom: 1px solid black;
+background-color: blue;
+padding: 1px;
+color: black;
+
+
+
 }
