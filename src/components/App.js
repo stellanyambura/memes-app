@@ -1,19 +1,16 @@
 
-import React from 'react';
-import {BrowserRouter, Routes, Route } from "react-router-dom"
-import '../App.css';
-
 import React, {useState} from 'react';
 import { Routes, Route,BrowserRouter} from 'react-router-dom'
 import 'semantic-ui-css/semantic.min.css'
 import '../index.css'
-import Home from "./Home";
+import '../App.css';
+
 import LoginPage from './LoginPage';
 
 
 
 import RandomMemes from './RandomMemes';
-import LoginPage from './LoginPage';
+
 import HomePage from './Home';
 import Nav from './Navbar';
 import Signup from './Signup';

@@ -42,7 +42,7 @@ const [error, setError] = useState(null);
     type="password"
     placeholder="your password"
     id="password"
-    name="password"
+    name="password"z
     required
     />
     <button> Login</button>
